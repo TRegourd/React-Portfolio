@@ -3,6 +3,7 @@ import CTA from "./CTA";
 import "./header.css";
 import ME from "../../assets/Me.png";
 import HeaderSocials from "./HeaderSocials";
+import { CgScrollH } from "react-icons/cg";
 
 const Header = () => {
   return (
@@ -16,7 +17,9 @@ const Header = () => {
         <div className="me">
           <img src={ME} alt="Thomas' Profile Picutre" />
         </div>
-        <a href="#contact" className="scroll_down"></a>
+        <a href="#contact" className="scroll_down">
+          Scroll Down <CgScrollH />
+        </a>
       </div>
     </header>
   );
