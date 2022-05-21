@@ -18,6 +18,10 @@
   transition: var(--transition);
 }
 
+.top__container > div {
+  width: 100%;
+}
+
 .experience__container > div:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
