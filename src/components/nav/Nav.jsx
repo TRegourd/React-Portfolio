@@ -6,22 +6,45 @@ import { BiBookContent } from "react-icons/bi";
 import { BsHandThumbsUp } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
 
+import { useState } from "react";
+
 const Nav = () => {
+  const [activeNav, setActiveNav] = useState("#");
   return (
     <nav>
-      <a href="">
+      <a
+        href="#"
+        onClick={() => setActiveNav("#")}
+        className={activeNav === "#" ? "active" : ""}
+      >
         <TiHomeOutline />
       </a>
-      <a href="">
+      <a
+        href="#about"
+        onClick={() => setActiveNav("#about")}
+        className={activeNav === "#about" ? "active" : ""}
+      >
         <AiOutlineUser />
       </a>
-      <a href="">
+      <a
+        href="#experience"
+        onClick={() => setActiveNav("#experience")}
+        className={activeNav === "#experience" ? "active" : ""}
+      >
         <BiBookContent />
       </a>
-      <a href="">
+      <a
+        href="#services"
+        onClick={() => setActiveNav("#services")}
+        className={activeNav === "#services" ? "active" : ""}
+      >
         <BsHandThumbsUp />
       </a>
-      <a href="">
+      <a
+        href="#contact"
+        onClick={() => setActiveNav("#contact")}
+        className={activeNav === "#contact" ? "active" : ""}
+      >
         <MdOutlineEmail />
       </a>
     </nav>
