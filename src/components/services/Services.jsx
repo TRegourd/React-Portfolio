@@ -107,7 +107,6 @@ const Services = () => {
             </li>
           </ul>
         </article>
-        {/* END OF CONTENT CREATION */}
       </div>
     </section>
   );
